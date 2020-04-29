@@ -1,0 +1,44 @@
+:host {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 1px 24px 0 rgba(18, 21, 35, 0.08);
+  background-color: var(--white);
+  margin: 24px 0;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.course-title {
+  font-size: 24px;
+  color: var(--dark);
+}
+
+.course-description {
+  width: 70%;
+
+  font-size: 14px;
+  color: var(--slate-grey);
+}
+
+.course-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 70%;
+}
+
+.course-data {
+  font-size: 12px;
+  color: var(--silver);
+
+  span {
+    margin-right: 7px;
+  }
+}

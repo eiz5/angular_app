@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  height: 24px;
+  justify-content: space-between;
+  width: 184px;
+}
+
+button {
+  width: 86px;
+  background-color: var(--dark-sky-blue);
+  font-size: 12px;
+}

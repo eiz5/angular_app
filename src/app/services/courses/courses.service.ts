@@ -8,17 +8,23 @@ export class CoursesService {
 	private courses: ICourse[] = [
 		{
 			id: 'id1',
-			title: 'title1',
-			creationDate: 'date1',
-			duration: 'duration1',
-			description: 'description1'
+			title: 'Video course',
+			creationDate: '04.04.2020',
+			duration: 40,
+			description:
+				'Explore the evolution of the spa industry from ancient civilizations to new frontiers of convergence\n' +
+				'integrating spas, medicine, healthcare, tourism, and hospitality. Study the industry from an\n' +
+				'international perspective, with emphasis on current business models and positioning for future trends. '
 		},
 		{
 			id: 'id2',
-			title: 'title2',
-			creationDate: 'date2',
-			duration: 'duration2',
-			description: 'description2'
+			title: 'Video course',
+			creationDate: '05.04.2020',
+			duration: 50,
+			description:
+				'Explore the evolution of the spa industry from ancient civilizations to new frontiers of convergence\n' +
+				'integrating spas, medicine, healthcare, tourism, and hospitality. Study the industry from an\n' +
+				'international perspective, with emphasis on current business models and positioning for future trends. '
 		}
 	];
 	constructor() {}

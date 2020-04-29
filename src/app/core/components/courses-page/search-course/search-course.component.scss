@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  height: 48px;
+  margin: 24px 0;
+}
+
+.search-button {
+  width: 100px;
+  background-color: var(--sick-green);
+
+  font-size: 18px;
+}
+
+.search-input {
+  width: 360px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: solid 1px var(--pale-grey);
+  background-color: var(--white);
+  padding: 12px;
+  box-sizing: border-box;
+}

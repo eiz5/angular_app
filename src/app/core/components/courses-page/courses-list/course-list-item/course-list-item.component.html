@@ -1,0 +1,14 @@
+<div class="course-header">
+  <h2 class="course-title">{{course.title}}</h2>
+  <div class="course-data">
+    <span>Duration: {{course.duration}}</span>
+    <span>Creation date: {{course.creationDate}}</span>
+  </div>
+</div>
+<div class="course-content">
+  <p class="course-description">{{course.description}}</p>
+  <app-course-control-buttons
+    (deleteCourse)="handleDeleteCourse()"
+    (editCourse)="handleEditCourse()">
+  </app-course-control-buttons>
+</div>

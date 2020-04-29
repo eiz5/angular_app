@@ -2,23 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/base/header/header.component';
 import { BreadcrumbsComponent } from './components/base/breadcrumbs/breadcrumbs.component';
-import { SectionComponent } from './components/courses-page/section/section.component';
+import { SearchCourseComponent } from './components/courses-page/search-course/search-course.component';
 import { FooterComponent } from './components/base/footer/footer.component';
 import { CoursesListComponent } from './components/courses-page/courses-list/courses-list.component';
 import { CoursesPageComponent } from './components/courses-page/courses-page.component';
-import { CourseComponent } from './components/courses-page/courses-list/course/course.component';
+import { CourseListItemComponent } from './components/courses-page/courses-list/course-list-item/course-list-item.component';
 import { LogoComponent } from './components/base/logo/logo.component';
+import { CourseControlButtonsComponent } from './components/courses-page/courses-list/course-list-item/course-control-buttons/course-control-buttons.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
 	declarations: [
 		HeaderComponent,
 		BreadcrumbsComponent,
-		SectionComponent,
+		SearchCourseComponent,
 		FooterComponent,
 		CoursesListComponent,
 		CoursesPageComponent,
-		CourseComponent,
-		LogoComponent
+		CourseListItemComponent,
+		LogoComponent,
+		CourseControlButtonsComponent
 	],
 	exports: [
 		CoursesPageComponent,
@@ -26,6 +29,6 @@ import { LogoComponent } from './components/base/logo/logo.component';
 		HeaderComponent,
 		FooterComponent
 	],
-	imports: [CommonModule]
+	imports: [CommonModule, FormsModule]
 })
 export class CoreModule {}

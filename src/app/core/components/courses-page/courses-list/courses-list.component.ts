@@ -18,4 +18,8 @@ export class CoursesListComponent implements OnInit {
 	ngOnInit(): void {
 		this.courses = this.coursesService.getCourses();
 	}
+
+	loadMoreCourses() {
+		console.log('loadCourses');
+	}
 }

@@ -1,0 +1,12 @@
+:host {
+  height: 64px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-title {
+  margin-left: 85px;
+  font-size: 14px;
+  font-weight: 600;
+}

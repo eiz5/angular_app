@@ -1,0 +1,18 @@
+@import "../mixins/button.scss";
+@import "fonts";
+
+*{
+  margin:0;
+  padding:0;
+  @include font-face();
+}
+body{
+  margin-bottom:0;
+  padding-bottom:0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+button {
+  @include custom-button();
+}
