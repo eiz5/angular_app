@@ -11,6 +11,7 @@ import {
 	OnDestroy
 } from '@angular/core';
 import { ICourse } from '../../../../../types/i-course';
+import { faClock, faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
 	selector: 'app-course',
@@ -29,6 +30,8 @@ export class CourseListItemComponent
 		OnDestroy {
 	@Input()
 	public course: ICourse;
+	public faClock = faClock;
+	public faCalendarAlt = faCalendarAlt;
 	private testVariable: string;
 
 	constructor() {}
@@ -42,19 +45,19 @@ export class CourseListItemComponent
 		console.log('ngOnInit');
 	}
 
-	ngDoCheck() {
+	ngDoCheck(): void {
 		console.log('ngDoCheck');
 	}
 
-	ngAfterContentInit() {
+	ngAfterContentInit(): void {
 		console.log('ngAfterContentInit');
 	}
 
-	ngAfterContentChecked() {
+	ngAfterContentChecked(): void {
 		console.log('ngAfterContentInit');
 	}
 
-	ngAfterViewInit() {
+	ngAfterViewInit(): void {
 		console.log('ngAfterViewInit');
 	}
 
@@ -66,11 +69,11 @@ export class CourseListItemComponent
 		console.log('ngOnDestroy');
 	}
 
-	handleDeleteCourse() {
+	handleDeleteCourse(): void {
 		console.log(this.course.id, 'DeleteCourse');
 	}
 
-	handleEditCourse() {
+	handleEditCourse(): void {
 		console.log(this.course.id, 'EditCourse');
 	}
 }

@@ -8,11 +8,15 @@
   color: var(--white);
 }
 
-.login-icons {
+.login-icons-container {
   display: flex;
-  width: 169px;
   justify-content: space-between;
   margin-right: 39px;
+
+  .login-icon {
+    margin: 0 10px 0 25px;
+    cursor: pointer;
+  }
 }
 
 .logo {

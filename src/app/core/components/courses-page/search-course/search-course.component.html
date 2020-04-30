@@ -1,2 +1,3 @@
-<input placeholder="Text to search" class="search-input" [ngModel]="selectedCourse" (ngModelChange)="selectedCourse = $event">
-<button class="search-button" (click)="searchCourse()">Search</button>
+<input placeholder='Text to search' class='search-input' [ngModel]='selectedCourse' (ngModelChange)='selectedCourse = $event'>
+<fa-icon [icon]='faSearch' class='search-icon'></fa-icon>
+<app-button class='search-button' (click)='searchCourse()'>Search</app-button>

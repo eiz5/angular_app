@@ -10,6 +10,8 @@ import { CourseListItemComponent } from './components/courses-page/courses-list/
 import { LogoComponent } from './components/base/logo/logo.component';
 import { CourseControlButtonsComponent } from './components/courses-page/courses-list/course-list-item/course-control-buttons/course-control-buttons.component';
 import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ButtonComponent } from './components/base/UI/button/button.component';
 
 @NgModule({
 	declarations: [
@@ -21,7 +23,8 @@ import { FormsModule } from '@angular/forms';
 		CoursesPageComponent,
 		CourseListItemComponent,
 		LogoComponent,
-		CourseControlButtonsComponent
+		CourseControlButtonsComponent,
+		ButtonComponent
 	],
 	exports: [
 		CoursesPageComponent,
@@ -29,6 +32,6 @@ import { FormsModule } from '@angular/forms';
 		HeaderComponent,
 		FooterComponent
 	],
-	imports: [CommonModule, FormsModule]
+	imports: [CommonModule, FormsModule, FontAwesomeModule]
 })
 export class CoreModule {}

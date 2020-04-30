@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'app-search-course',
@@ -7,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchCourseComponent implements OnInit {
 	public selectedCourse: string;
+	public faSearch = faSearch;
+
 	constructor() {}
 
 	ngOnInit(): void {}
 
-	searchCourse() {
+	public searchCourse(): void {
 		console.log(this.selectedCourse);
 	}
 }

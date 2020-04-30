@@ -19,7 +19,7 @@ export class CoursesListComponent implements OnInit {
 		this.courses = this.coursesService.getCourses();
 	}
 
-	loadMoreCourses() {
+	public loadMoreCourses(): void {
 		console.log('loadCourses');
 	}
 }

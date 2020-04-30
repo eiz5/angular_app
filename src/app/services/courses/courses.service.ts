@@ -11,20 +11,24 @@ export class CoursesService {
 			title: 'Video course',
 			creationDate: '04.04.2020',
 			duration: 40,
-			description:
-				'Explore the evolution of the spa industry from ancient civilizations to new frontiers of convergence\n' +
-				'integrating spas, medicine, healthcare, tourism, and hospitality. Study the industry from an\n' +
-				'international perspective, with emphasis on current business models and positioning for future trends. '
+			description: `Course descriptions are a driving force behind the enrollment decisions our students make. Please keep
+this in mind when constructing each description, ensuring it is clear, concise, easy-to-read and conveys
+the how each course will benefit the student.`
 		},
 		{
 			id: 'id2',
 			title: 'Video course',
 			creationDate: '05.04.2020',
 			duration: 50,
-			description:
-				'Explore the evolution of the spa industry from ancient civilizations to new frontiers of convergence\n' +
-				'integrating spas, medicine, healthcare, tourism, and hospitality. Study the industry from an\n' +
-				'international perspective, with emphasis on current business models and positioning for future trends. '
+			description: `Course descriptions are a driving force behind the enrollment decisions our students make. Please keep
+this in mind when constructing each description, ensuring it is clear, concise, easy-to-read and conveys
+the how each course will benefit the student. Course descriptions are a driving force behind the enrollment decisions our students make. Please keep
+this in mind when constructing each description, ensuring it is clear, concise, easy-to-read and conveys
+the how each course will benefit the student. Course descriptions are a driving force behind the enrollment decisions our students make. Please keep
+this in mind when constructing each description, ensuring it is clear, concise, easy-to-read and conveys
+the how each course will benefit the student. Course descriptions are a driving force behind the enrollment decisions our students make. Please keep
+this in mind when constructing each description, ensuring it is clear, concise, easy-to-read and conveys
+the how each course will benefit the student.`
 		}
 	];
 	constructor() {}

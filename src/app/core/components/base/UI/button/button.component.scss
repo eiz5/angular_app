@@ -1,0 +1,27 @@
+:host {
+  border-radius: 3px;
+}
+
+.custom-button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+
+  font-weight: 600;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+
+  cursor: pointer;
+  background-color: inherit;
+  box-shadow: inherit;
+
+  &:focus {
+    outline: none;
+  }
+
+  .button-icon {
+    margin-right: 7px;
+  }
+}

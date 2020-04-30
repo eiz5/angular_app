@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'app-course-control-buttons',
@@ -6,6 +7,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 	styleUrls: ['./course-control-buttons.component.scss']
 })
 export class CourseControlButtonsComponent implements OnInit {
+	public faPen = faPen;
+	public faTrash = faTrash;
+
 	@Output()
 	deleteCourse: EventEmitter<any> = new EventEmitter();
 
@@ -16,11 +20,11 @@ export class CourseControlButtonsComponent implements OnInit {
 
 	ngOnInit(): void {}
 
-	onDeleteCourse() {
+	onDeleteCourse(): void {
 		this.deleteCourse.emit();
 	}
 
-	onEditCourse() {
+	onEditCourse(): void {
 		this.editCourse.emit();
 	}
 }
