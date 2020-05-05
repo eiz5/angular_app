@@ -1,10 +1,14 @@
 <div class='course-header'>
-  <h2 class='course-title'>{{course.title}}</h2>
+  <h2 class='course-title'>
+    Video Course.
+    {{course.title | uppercase}}
+    <fa-icon *ngIf='course.topRated' [icon]='faStar' class='star-icon'></fa-icon>
+  </h2>
   <div class='course-data'>
     <fa-icon [icon]='faClock' class='course-icons'></fa-icon>
-    <span>{{course.duration}}</span>
+    <span>{{course.duration | duration}}</span>
     <fa-icon [icon]='faCalendarAlt' class='course-icons'></fa-icon>
-    <span>{{course.creationDate}}</span>
+    <span>{{course.creationDate | date: 'dd.MM.y'}}</span>
   </div>
 </div>
 <div class='course-content'>

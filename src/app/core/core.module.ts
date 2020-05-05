@@ -12,6 +12,9 @@ import { CourseControlButtonsComponent } from './components/courses-page/courses
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonComponent } from './components/base/UI/button/button.component';
+import { CourseBorderDirective } from './directives/course-border.directive';
+import { DurationPipe } from './pipes/duration/duration.pipe';
+import { OrderByPipe } from './pipes/order-by/order-by.pipe';
 
 @NgModule({
 	declarations: [
@@ -24,7 +27,10 @@ import { ButtonComponent } from './components/base/UI/button/button.component';
 		CourseListItemComponent,
 		LogoComponent,
 		CourseControlButtonsComponent,
-		ButtonComponent
+		ButtonComponent,
+		CourseBorderDirective,
+		DurationPipe,
+		OrderByPipe
 	],
 	exports: [
 		CoursesPageComponent,

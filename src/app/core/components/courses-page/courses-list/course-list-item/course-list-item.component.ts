@@ -1,72 +1,26 @@
-import {
-	Component,
-	OnInit,
-	Input,
-	OnChanges,
-	DoCheck,
-	AfterContentInit,
-	AfterContentChecked,
-	AfterViewInit,
-	AfterViewChecked,
-	OnDestroy
-} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ICourse } from '../../../../../types/i-course';
 import { faClock, faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'app-course',
 	templateUrl: './course-list-item.component.html',
 	styleUrls: ['./course-list-item.component.scss']
 })
-export class CourseListItemComponent
-	implements
-		OnInit,
-		OnChanges,
-		DoCheck,
-		AfterContentInit,
-		AfterContentChecked,
-		AfterViewInit,
-		AfterViewChecked,
-		OnDestroy {
+export class CourseListItemComponent implements OnInit {
 	@Input()
 	public course: ICourse;
 	public faClock = faClock;
 	public faCalendarAlt = faCalendarAlt;
+	public faStar = faStar;
+
 	private testVariable: string;
 
 	constructor() {}
 
-	ngOnChanges(obj): void {
-		console.log(obj, 'ngOneChanges');
-	}
-
 	ngOnInit(): void {
 		this.testVariable = 'test';
-		console.log('ngOnInit');
-	}
-
-	ngDoCheck(): void {
-		console.log('ngDoCheck');
-	}
-
-	ngAfterContentInit(): void {
-		console.log('ngAfterContentInit');
-	}
-
-	ngAfterContentChecked(): void {
-		console.log('ngAfterContentInit');
-	}
-
-	ngAfterViewInit(): void {
-		console.log('ngAfterViewInit');
-	}
-
-	ngAfterViewChecked(): void {
-		console.log('AfterViewChecked');
-	}
-
-	ngOnDestroy(): void {
-		console.log('ngOnDestroy');
 	}
 
 	handleDeleteCourse(): void {

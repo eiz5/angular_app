@@ -9,7 +9,13 @@
   box-sizing: border-box;
 }
 
+:host(.top-rated-course) {
+  background-color: var(--blue);
 
+  .course-data {
+    color: var(--slate-grey) !important;
+  }
+}
 
 .course-content {
   display: flex;
@@ -41,6 +47,11 @@
     font-size: 24px;
     font-weight: 600;
     color: var(--dark);
+
+    .star-icon {
+      font-size: 20px;
+      color: var(--yellow);
+    }
   }
 
   .course-data {
