@@ -1,5 +1,5 @@
 <app-logo class='logo'></app-logo>
-<div class='login-icons-container'>
+<div *ngIf='isAuth' class='login-icons-container'>
   <fa-icon [icon]='faUser' class='login-icon'></fa-icon>
   <p>User login</p>
   <fa-icon [icon]='faSignOutAlt' class='login-icon'></fa-icon>

@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ICourse } from '../../../../../types/i-course';
 import { faClock, faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { CoursesService } from '../../../../../services/courses/courses.service';
 
 @Component({
 	selector: 'app-course',
@@ -17,14 +18,17 @@ export class CourseListItemComponent implements OnInit {
 
 	private testVariable: string;
 
-	constructor() {}
+	constructor(private coursesService: CoursesService) {}
 
 	ngOnInit(): void {
 		this.testVariable = 'test';
 	}
 
 	handleDeleteCourse(): void {
-		console.log(this.course.id, 'DeleteCourse');
+		const isConfirmed = confirm('Вы действительно хотите удалить данный курс?');
+		if (isConfirmed) {
+			this.coursesService.removeCourse(this.course.id);
+		}
 	}
 
 	handleEditCourse(): void {

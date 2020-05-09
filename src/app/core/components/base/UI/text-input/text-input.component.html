@@ -1,0 +1,10 @@
+<div *ngIf='isFormField' class='label-container'>
+  <label [htmlFor]='id' class='input-label'>{{label}}</label>
+  <span class='warning-message'>*required</span>
+</div>
+<input [placeholder]='placeholder'
+       [ngClass]='{"custom-input": true, "form-field": isFormField}'
+       [ngModel]='value'
+       (ngModelChange)='onValueChanged($event)'
+       [id]='id'>
+<fa-icon *ngIf="icon" [icon]='icon' class='icon'></fa-icon>

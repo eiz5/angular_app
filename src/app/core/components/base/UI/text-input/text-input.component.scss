@@ -1,0 +1,47 @@
+:host {
+  display: block;
+  position: relative;
+}
+
+.custom-input {
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  border: solid 1px var(--pale-grey);
+  background-color: var(--white);
+  padding: 12px 12px 12px 35px;
+  box-sizing: border-box;
+  font-size: 14px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--silver);
+  }
+}
+
+.form-field {
+  padding: 6px 12px;
+  height: 32px;
+}
+
+.icon {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 14px;
+  color: var(--silver);
+  transform: rotate(90deg);
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--slate-grey);
+}

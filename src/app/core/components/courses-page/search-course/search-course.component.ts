@@ -8,12 +8,16 @@ import { CoursesService } from '../../../../services/courses/courses.service';
 	styleUrls: ['./search-course.component.scss']
 })
 export class SearchCourseComponent implements OnInit {
-	public selectedCourse: string;
 	public faSearch = faSearch;
+	private selectedCourse: string;
 
 	constructor(private coursesService: CoursesService) {}
 
 	ngOnInit(): void {}
+
+	public setSelectedCourse(selectedCourse: string) {
+		this.selectedCourse = selectedCourse;
+	}
 
 	public searchCourse(): void {
 		this.coursesService.setSelectedCourse(this.selectedCourse);

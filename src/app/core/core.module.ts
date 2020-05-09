@@ -15,6 +15,9 @@ import { ButtonComponent } from './components/base/UI/button/button.component';
 import { CourseBorderDirective } from './directives/course-border.directive';
 import { DurationPipe } from './pipes/duration/duration.pipe';
 import { OrderByPipe } from './pipes/order-by/order-by.pipe';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { LoginFormComponent } from './components/login-page/login-form/login-form.component';
+import { TextInputComponent } from './components/base/UI/text-input/text-input.component';
 
 @NgModule({
 	declarations: [
@@ -30,7 +33,10 @@ import { OrderByPipe } from './pipes/order-by/order-by.pipe';
 		ButtonComponent,
 		CourseBorderDirective,
 		DurationPipe,
-		OrderByPipe
+		OrderByPipe,
+		LoginPageComponent,
+		LoginFormComponent,
+		TextInputComponent
 	],
 	exports: [
 		CoursesPageComponent,

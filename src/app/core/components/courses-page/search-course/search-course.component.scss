@@ -1,36 +1,7 @@
 :host {
-  position: relative;
   display: flex;
   height: 48px;
   margin: 24px 0;
-}
-
-.search-input {
-  width: 360px;
-  margin-right: 10px;
-  border-radius: 3px;
-  border: solid 1px var(--pale-grey);
-  background-color: var(--white);
-  padding: 12px 12px 12px 35px;
-  box-sizing: border-box;
-  font-size: 14px;
-
-  &:focus {
-    outline: none;
-  }
-
-  &::placeholder {
-    color: var(--silver);
-  }
-}
-
-.search-icon {
-  position: absolute;
-  top: 16px;
-  left: 12px;
-  font-size: 14px;
-  color: var(--silver);
-  transform: rotate(90deg);
 }
 
 .search-button {
@@ -39,4 +10,9 @@
   color: var(--white);
 
   font-size: 18px;
+}
+
+.search-input {
+  width: 360px;
+  margin-right: 10px;
 }

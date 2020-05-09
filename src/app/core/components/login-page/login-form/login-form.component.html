@@ -1,0 +1,21 @@
+<h2 class='form-title'>Login</h2>
+<app-text-input
+  label='E-mail:'
+  placeholder='Enter email'
+  id='email'
+  class='form-field'
+  isFormField=true
+  (valueChanged)='onChangeEmail($event)'>
+</app-text-input>
+<app-text-input
+  label='Password:'
+  placeholder='Enter password'
+  id='password'
+  class='form-field'
+  isFormField=true
+  (valueChanged)='onChangePassword($event)'>
+</app-text-input>
+<div class='form-footer'>
+  <span class='question-message'>Forgot password?</span>
+  <app-button class='login-button' (buttonClick)='login()'>Login</app-button>
+</div>
